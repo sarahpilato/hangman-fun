@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Hangman!</title>
+    </head>
+    <body>
+    <div class="container">
+        <h1>Let's play some hangman!</h1>
+        <div>
+            You've used <span id="mistakes">0</span> of <span id="maxWrong"></span> guesses.
+        </div>
+        <div class="text-center">
+            <img id="hangmanPic" src="./images/0.jpg" alt="" />
+            <p>Guess the food!</p>
+            <p id="wordSpotlight">The word to be guessed goes here</p>
+            <div id="keyboard"></div>
+            <button class="btn btn-info" onClick="reset()">Reset</button>
+        </div>
+    </div>
+    <footer>
+        <p>Created by <a href="https://sarahpcodes.com/">Sarah Pilato 💫</a></p>
+    </footer>
+    <script src="hangman.js"></script>
+    </body>
+</html>
